@@ -19,7 +19,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sudo yum install -y puppet
   EOF
 
-
   config.vm.define :app do |c|
     c.vm.provision :shell do |shell|
       shell.path = "provision.sh"
